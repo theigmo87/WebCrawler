@@ -1,13 +1,15 @@
 var firebase = require("firebase");
 var settings = require("../config/settings.js");
 
-firebase.initializeApp({
-    databaseURL: settings.firebase.databaseUrl,
-    serviceAccount: settings.paths.firebaseAccountCreds,
-    databaseAuthVariableOverride: {
-        uid: settings.firebase.uid
-    }
-});
+if (settings.firebase.databaseUrl){
+    firebase.initializeApp({
+        databaseURL: settings.firebase.databaseUrl,
+        serviceAccount: settings.paths.firebaseAccountCreds,
+        databaseAuthVariableOverride: {
+            uid: settings.firebase.uid
+        }
+    });
+}
 
 var firebaseWrapper = {
     getScores: getScores,

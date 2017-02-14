@@ -1,4 +1,15 @@
-var privateSettings = require("./privateSettings.js");
+var privateSettings;
+
+try {
+    console.log(require.resolve("./privateSettings.js"));
+    privateSettings = require("./privateSettings.js");
+} catch(e) {
+    console.error("/config/privateSettings.js not found");
+    privateSettings = {
+        firebaseUrl: null,
+        firebaseUid: null
+    };
+}
 
 var settings = {    
     paths: {
