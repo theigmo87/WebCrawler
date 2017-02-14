@@ -1,0 +1,23 @@
+{
+  "name": "myherocardcrawler",
+  "version": "1.0.0",
+  "description": "Crawls a website and returns data via API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jimmy G",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.0.1",
+    "deep-equal": "^1.0.1",
+    "express": "^4.14.1",
+    "file-exists": "^2.0.0",
+    "firebase": "^3.2.1",
+    "fs": "0.0.2",
+    "guid": "0.0.12",
+    "node-schedule": "^1.1.1",
+    "request": "^2.74.0",
+    "x-ray": "^2.3.0"
+  }
+}
