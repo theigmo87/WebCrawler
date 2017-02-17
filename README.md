@@ -1,4 +1,4 @@
-"# MyHeroCardNodeJS" 
+NodeJS Webcrawler that serves up results over an API
 
 run the command: npm install
 
